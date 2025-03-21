@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imagens/background-ceu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fonteTexto);
+    font-size: 62.5%;
+    position: relative;
+}
+
+/* MENU */
+
+.container .menu {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 130px;
+    padding: 0 0 20px 0;
+    position: fixed;
+}
+
+.container .menu .logotipo {
+    justify-self: center;
+    padding: 10px 0;
+}
+
+.container .menu .logotipo h1 {
+    text-shadow: 1px 2px 2px var(--corDestaqueLaranja);
+    font-family: var(--fonteTitulo);
+    font-size: 4em;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+.container .menu .navegacao ul {
+    display: flex;
+    gap: 15px;
+    font-size: 1.8em;
+}
+
+.container .menu .navegacao ul li a{
+    transition: 0.3s;
+}
+
+.container .menu .navegacao ul li a:hover{
+    text-shadow: 1px 2px 2px var(--corDestaqueLaranja);
+    font-size: 1.1em;
+}
+
+/* CONTEUDO -- SOBRE */
+
+.conteudo #sobre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo #sobre h1.titulo,
+.conteudo #servicos h2.titulo{
+    text-shadow: 1px 1px 2px var(--corDestaqueLaranja);
+    font-family: var(--fonteTitulo);
+    font-size: 6em;
+    font-weight: 500;
+    font-variant: small-caps;
+    padding-bottom: 15px;
+}
+
+.conteudo #sobre p {
+    max-width: 80%;
+    font-size: 1.7em;
+    text-align: justify;
+    padding: 15px;
+    margin: 10px;
+    text-indent: 5px;
+}
+
+/* CONTEUDO -- SERVIÇOS */
+.conteudo #servicos {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo #servicos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.conteudo #servicos ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo #servicos ul li>img{
+    border-radius: 10px;
+    border: 1px solid var(--corDestaqueLaranja);
+}
+
+.conteudo #servicos ul li .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    font-size: 1.6em;
+}
+
+.conteudo #servicos ul li .infos a {
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 1px 2px 2px var(--corDestaqueLaranja);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 150px;
+    margin-left: auto;
+}
+
+.conteudo #servicos ul li .infos a:hover {
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
