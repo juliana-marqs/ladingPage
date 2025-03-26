@@ -25,6 +25,9 @@ body{
     max-height: 130px;
     padding: 0 0 20px 0;
     position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
 }
 
 .container .menu .logotipo {
@@ -169,4 +172,19 @@ body{
 .conteudo #contato i:hover{
     color: #fff;
     font-size: 3.1em;
+}
+
+@media (max-width: 768px) {
+    .container .menu {
+        height: 100px;
+        padding: 0 10px;
+    }
+    
+    .container .menu .navegacao ul {
+        gap: 5px;
+    }
+
+    .container .menu .logotipo h1 {
+        font-size: 3em;
+    }
 }
