@@ -147,6 +147,7 @@ body{
     background: rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px);
+    transform: scale(1.1);
 }
 
 /* CONTEUDO -- RODAPÉ -- CONTATO */
